@@ -1,3 +1,5 @@
+module.exports = function(app) {
+
 app.post("/api/friends",  function(req, res) {
     var newRes = req.body;
     console.log(newRes);
@@ -8,3 +10,4 @@ app.get("/api/friends", function(req, res) {
     res.json(stuff);
     console.log("sent");
 });
+}
