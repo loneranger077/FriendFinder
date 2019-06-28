@@ -19,9 +19,9 @@ app.post("./api/friends",  function(req, res) {
         diff_tots = diff_tots.push(diff_tot);
     };
     match_num = Array.min(diff_tots);
-    name = friends.js[match_num].name;
+    name1 = friends.js[match_num].name;
     url = friends.js[match_num].photo;
-    res.json(friends[0]);
+    res.json({name: name1, photo: url});
 });
 
 app.get("/api/friends", function(req, res) {
